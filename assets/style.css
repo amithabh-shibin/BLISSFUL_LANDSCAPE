@@ -106,7 +106,17 @@ footer{background:var(--deep);color:#e8f1e9}
 .quick a{display:grid;place-items:center;min-height:46px;padding:.5rem 1rem;border-radius:999px;background:#17674a;color:white;text-decoration:none;font-weight:740;font-size:.89rem;box-shadow:0 3px 15px #01241545;border:1px solid #ffffff26}
 .quick a:hover{background:#0e5037}
 .quick a.quick-call{background:var(--blue)}
+.quick .quick-icon{display:none;width:25px;height:25px}
 @media(min-width:1101px){.call,.quick a.call{display:none}}
+@media(max-width:1100px){
+  .quick{gap:10px}
+  .quick a{width:50px;height:50px;padding:0;background:#128246}
+  .quick a:hover{background:#0b6837}
+  .quick a.quick-call{background:var(--forest)}
+  .quick a.quick-call:hover{background:var(--deep)}
+  .quick .quick-icon{display:block}
+  .quick .quick-text{display:none}
+}
 @media(max-width:950px){.wrap{width:calc(100% - 48px)}.header-quote{display:none}.cards,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.wrap{width:calc(100% - 36px)}.header-inner{min-height:74px;flex-wrap:wrap;gap:0}.brand img{width:50px;height:50px}.menu{display:block}.header-inner nav{display:none;width:100%;padding:0 0 .8rem}.header-inner nav.open,.header-inner nav:focus-within,.menu[hidden]+nav{display:grid;gap:0}.header-inner nav a{padding:.65rem .2rem}.header-inner nav a[aria-current]{border-color:var(--line)}.slide{min-height:565px;padding-top:55px}.slide::after{background:linear-gradient(90deg,#071b14e8,#09241a80)}.slide>img{object-position:60% center}.section-head,.split,.inner-grid,.contact-grid,.faq,.service-row,.footer-grid{grid-template-columns:1fr;gap:1.55rem}.service-row:nth-child(even) img{order:0}.quotes{grid-template-columns:1fr}.closing-inner{display:grid;justify-items:start}.footer-grid{padding-block:2rem}.copyright{padding:1rem 0 1.2rem}.quick{right:12px;bottom:max(12px,env(safe-area-inset-bottom))}footer{padding-bottom:60px}}
 @media(max-width:500px){.cards,.gallery{grid-template-columns:1fr}.slide .actions{gap:.55rem}.btn{padding-inline:.9rem}.brand strong{font-size:1.22rem}}
